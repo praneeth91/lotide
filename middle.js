@@ -1,19 +1,5 @@
-let eqArrays = function(arr1,arr2) {
-  let str1 = arr1.join('');
-  let str2 = arr2.join('');
-  if (str1 === str2) {
-    return true;
-  } else {
-    return false;
-  }
-};
-let assertArraysEqual = function(arr3,arr4){
-  if (eqArrays(arr3,arr4) === true) {
-    console.log("Test passed");
-  } else{
-    console.log("Arrays are not equal");
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArrayEqual');
 let middle = function(arr4){
   let arr_return = [];
   if (arr4.length < 3){
@@ -30,7 +16,4 @@ let middle = function(arr4){
     return arr_return;
   }
 };
-assertArraysEqual(middle([1]),[]);
-assertArraysEqual(middle([1,2]),[]);
-assertArraysEqual(middle([1,2,3]),[2]);
-assertArraysEqual(middle([1,2,3,4]),[2,3]);
+module.exports = middle;
