@@ -15,20 +15,20 @@ const map = require('./map');
 const takeUntill = require('./takeUntil');
 const without = require('./without');
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertArrayEqual: assertArrayEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  letterPosition: letterPosition,
-  map: map,
-  takeUntill: takeUntill,
-  without: without
+  head,
+  ail,
+  middle,
+  assertArrayEqual,
+  assertEqual,
+  assertObjectsEqual,
+  countLetters,
+  ountOnly,
+  eqArrays,
+  findKey,
+  findKeyByValue,
+  flatten,
+  letterPosition,
+  map,
+  takeUntill,
+  without
 };
